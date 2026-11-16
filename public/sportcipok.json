@@ -1,0 +1,34 @@
+{
+  "sportcipok": [
+    {
+      "marka": "Nike",
+      "ar": 25000,
+      "vane": true,
+      "kiallitas": "2026-01-15"
+    },
+    {
+      "marka": "Adidas",
+      "ar": 18000,
+      "vane": true,
+      "kiallitas": "2026-02-20"
+    },
+    {
+      "marka": "Puma",
+      "ar": 15000,
+      "vane": false,
+      "kiallitas": "2026-03-10"
+    },
+    {
+      "marka": "Converse",
+      "ar": 22000,
+      "vane": true,
+      "kiallitas": "2026-04-05"
+    },
+    {
+      "marka": "Vans",
+      "ar": 19500,
+      "vane": false,
+      "kiallitas": "2026-05-12"
+    }
+  ]
+}
