@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import type { Cipo } from "./type/types";
 import CipokKiiratasa from "./components/cipok";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [cipok, setCipok] = useState<Cipo[]>([]);
@@ -50,6 +51,8 @@ function App() {
 
   return <>
     <div className="container">
+      <h1>Cipők</h1>
+      <h2>Cipők listája</h2>
       {cipok.map((item)=>(
         <CipokKiiratasa
           key={item.id}
@@ -59,6 +62,7 @@ function App() {
           kiallitas={item.kiallitas}
         />
       ))}
+      
       
     </div>
   </>;

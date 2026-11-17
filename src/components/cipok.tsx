@@ -9,8 +9,6 @@ export default function CipokKiiratasa(props: CipokProps) {
     const datum = props.kiallitas instanceof Date ? props.kiallitas : new Date(props.kiallitas);
     return <>
         <div>
-            <h1>Cipők</h1>
-            <h2>Cipők listája</h2>
             <table className="table table-hover table-bordered">
                 <thead>
                     <tr>
@@ -24,7 +22,7 @@ export default function CipokKiiratasa(props: CipokProps) {
                     <tr>
                         <td>{props.marka}</td>
                         <td>{props.ar}</td>
-                        <td>{props.vane ? "Van" : "Nincs"}</td>
+                        <td>{props.vane ? "Van✅" : "Nincs❌"}</td>
                         <td>{datum.toLocaleDateString("hu-HU")}</td>
                     </tr>
                 </tbody>
