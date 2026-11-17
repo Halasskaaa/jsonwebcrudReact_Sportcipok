@@ -20,6 +20,7 @@ function App() {
         console.log("Hiba történt: " + err.message);
       }
     }
+    fetchCipok();
   }, []);
 
   async function handleCipoFelvetel(e) {
@@ -51,6 +52,7 @@ function App() {
     <div className="container">
       {cipok.map((item)=>(
         <CipokKiiratasa
+          key={item.id}
           marka={item.marka}
           ar={item.ar}
           vane={item.vane}
