@@ -78,8 +78,8 @@ function App() {
           Van-e: <br />
 
           <select value={vane} onChange={(e)=>setVane(e.target.value)}>
-              <option value="0">Nincs❌</option>
-              <option value="1">Van✅</option>
+              <option value="false">Nincs❌</option>
+              <option value="true">Van✅</option>
             </select> <br />
         </label> <br />
         <label htmlFor="input_marka">
