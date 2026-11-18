@@ -24,6 +24,7 @@ function App() {
     fetchCipok();
   }, []);
 
+  // this goes along the second part, aka: The form
   async function handleCipoFelvetel(e) {
     e.preventDefault();
     const ujCipo = {
@@ -63,7 +64,30 @@ function App() {
         />
       ))}
       
-      
+      <h2>Felhasználók felvétele</h2>
+      <form onSubmit={handleCipoFelvetel}>
+        <label htmlFor="input_marka">
+          Add meg a márkát: <br />
+          <input type="text" value={marka} onChange={(e)=>setMarka(e.target.value)}/> <br />
+        </label> <br />
+        <label htmlFor="input_marka">
+          Add meg az árat: <br />
+          <input type="text" value={ar} onChange={(e)=>setAr(e.target.value)}/> <br />
+        </label> <br />
+        <label htmlFor="input_marka">
+          Van-e: <br />
+
+          <select value={vane} onChange={(e)=>setVane(e.target.value)}>
+              <option value="0">Nincs❌</option>
+              <option value="1">Van✅</option>
+            </select> <br />
+        </label> <br />
+        <label htmlFor="input_marka">
+          Add meg a kiállítás idejét: <br />
+          <input type="text" value={kiallitas} onChange={(e)=>setKiallitas(e.target.value)} pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" required/> <br />
+        </label> <br />
+        <button type="submit">Felvétel</button>
+      </form>
     </div>
   </>;
 }
